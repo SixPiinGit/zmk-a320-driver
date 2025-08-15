@@ -1,0 +1,30 @@
+description: Avago A320 TouchPad Driver
+
+compatible: "avago,a320"
+
+include: i2c-device.yaml
+
+properties:
+    nrst-gpios:
+      type: phandle-array
+      required: false
+      description: |
+        nrst pin
+
+    motion-gpios:
+      type: phandle-array
+      required: false
+      description: |
+        motion pin
+
+    orient-gpios:
+      type: phandle-array
+      required: false
+      description: |
+        orient pin
+
+    shutdown-gpios:
+      type: phandle-array
+      required: false
+      description: |
+        shutdown pin
